@@ -1,0 +1,59 @@
+{
+	"name": "Bruhground",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/bg/full/full.wav",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/bg/full/drum.wav"
+				},
+				{
+					"name": "Melody a",
+					"file": "/bg/full/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/bg/full/melb.wav"
+				},
+				{
+					"name": "Melody c",
+					"file": "/bg/full/melc.wav"
+				},
+				{
+					"name": "Outro",
+					"file": "/bg/full/outro.wav"
+				}
+			]
+		},
+		{
+			"name": "Video",
+			"file": "/bg/video/full.wav",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/bg/video/drum.wav"
+				},
+				{
+					"name": "Melody a",
+					"file": "/bg/video/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/bg/video/melb.wav"
+				},
+				{
+					"name": "Melody c",
+					"file": "/bg/video/melc.wav"
+				},
+				{
+					"name": "Outro",
+					"file": "/bg/video/outro.wav"
+				}
+			]
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}

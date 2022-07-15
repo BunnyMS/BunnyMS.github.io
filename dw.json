@@ -1,0 +1,100 @@
+{
+	"name": "Another bad Doctor Who Theme",
+	"versions": [
+		{
+			"name": "Opening",
+			"file": "/dw/open/full.wav",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dw/open/bassa.wav"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dw/open/bassb.wav"
+				},
+				{
+					"name": "Melody synth a",
+					"file": "/dw/open/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/dw/open/melb.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/dw/open/spc.wav"
+				},
+				{
+					"name": "Sound effect",
+					"file": "/dw/open/sfx.wav"
+				}
+			],
+			"length":"0:44"
+		},
+		{
+			"name": "Closing",
+			"file": "/dw/closing/full.wav",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dw/closing/bassa.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dw/closing/bassb.flac"
+				},
+				{
+					"name": "Melody synth a",
+					"file": "/dw/closing/mela.flac"
+				},
+				{
+					"name": "Melody b",
+					"file": "/dw/closing/melb.flac"
+				},
+				{
+					"name": "Melody c",
+					"file": "/dw/closing/melc.flac"
+				},
+				{
+					"name": "Sound effect",
+					"file": "/dw/closing/sfx.flac"
+				}
+			],
+			"length":"1:08"
+		},
+		{
+			"name": "Release",
+			"file": "/dw/release/full.wav",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dw/release/bassa.wav"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dw/release/bassb.wav"
+				},
+				{
+					"name": "Melody synth a",
+					"file": "/dw/release/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/dw/release/melb.wav"
+				},
+				{
+					"name": "Melody c",
+					"file": "/dw/release/melc.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/dw/release/spc.wav"
+				}
+			],
+			"length":"2:05"
+		}
+	],
+	"artists": "BunnyMS; Ron Grainer",
+	"comments": "Doctor Who is a trademark of the BBC"
+}

@@ -1,0 +1,65 @@
+{
+	"name": "Old Stuff",
+	"versions": [
+		{
+			"name": "Release",
+			"file": "/80s/release/full.wav",
+			"stems": [
+				{
+					"name": "Melody a",
+					"file": "/80s/release/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/80s/release/melb.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/80s/release/drum.wav"
+				}
+			]
+		},
+		{
+			"name": "Keff",
+			"file": "/80s/hits/full.wav",
+			"stems": [
+				{
+					"name": "Melody a",
+					"file": "/80s/release/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/80s/release/melb.wav"
+				},
+				{
+					"name": "Bad sampled orchestral hits",
+					"file": "/80s/hits/hits.wav"
+				}
+			]
+		},
+		{
+			"name": "Draft",
+			"file": "/80s/draft/full.wav",
+			"stems": [
+				{
+					"name": "Melody a",
+					"file": "/80s/release/mela.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/80s/release/melb.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/80s/release/drum.wav"
+				},
+				{
+					"name": "",
+					"file": "/80s/draft/draft.wav"
+				}
+			]
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": "Doctor Who is a trademark of the BBC"
+}

@@ -1,0 +1,179 @@
+<html lang="en-nl">
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+		<link href="/style/main.css" rel="stylesheet">
+		<link href="/style/dark.css" rel="stylesheet">
+	</head>
+	<body>
+		<script>
+			let song;
+			let stmDiv = document.createElement("div");
+			let stmElts=[];
+			let seek = 0;
+			//let timLab;
+			let timSld;
+			let verSel;
+			let stmSel;
+			let playable=0;
+			
+			fetch("list.json")
+			.then(lr => lr.json())
+			.then(lj => {
+			const which = (new URL(window.location.href).searchParams.get("song"))*1||0;
+			fetch(lj[which])
+			.then(response => response.json())
+			.then(json => {
+				song=json;
+				verLab = document.createElement("label");
+				verSel = document.createElement("select");
+				verLab.htmlFor="ver";
+				verSel.name="ver";
+				verLab.innerText="Version: ";
+				verSel.onchange=selVer;
+				
+				stmLab = document.createElement("label");
+				stmSel = document.createElement("input");
+				stmSel.type="checkbox";
+				stmSel.name="stm";
+				stmLab.innerText="Show stems: ";
+				stmLab.htmlFor="stm";
+				stmSel.onchange=selVer;
+				
+				//timLab = document.createElement("label");
+				//timLab.innerText="0:00/";
+				//timLab.htmlFor="tim";
+				timSld = document.createElement("input");//i'm just hiding this now
+				timSld.type="range";
+				timSld.name="tim";
+				timSld.min=0;
+				timSld.step=0;
+				timSld.value=0;
+				timSld.id="slider";
+				timSld.onchange = e=>setTime(e.target.value);
+				
+				titTxt = document.createElement("h1");
+				titTxt.innerText=song.name;
+				
+				artTxt = document.createElement("i");
+				artTxt.innerText=song.artists+"\n";
+				
+				comTxt = document.createElement("b");
+				comTxt.innerText=song.comments+"\n";
+				
+				document.body.appendChild(titTxt);
+				document.body.appendChild(artTxt);
+				document.body.appendChild(verLab);
+				document.body.appendChild(verSel);
+				document.body.appendChild(stmLab);
+				document.body.appendChild(stmSel);
+				//document.body.appendChild(timLab);
+				document.body.appendChild(timSld);
+				
+				
+				json.versions.forEach((ver, i)=>{
+					let v =document.createElement("option");
+					v.value=i;
+					v.innerText=ver.name;
+					verSel.appendChild(v);
+					//console.log(ver);
+				});
+				document.body.appendChild(stmDiv);
+				document.body.appendChild(comTxt);
+				selVer(0);
+			});
+			});
+			function selVer(){
+				ver=verSel.value;
+				stmDiv.innerHTML="";
+				stmElts=[];
+				playable=0;
+				if(stmSel.checked) song.versions[ver].stems.forEach(stm=>{
+					p=document.createElement("p");
+					p.innerText = stm.name+": ";
+					
+					stmElt=document.createElement("audio");
+					stmElt.src="/audio"+stm.file;
+					stmElt.controls="true";
+					//stmElt.controlsList.add("notimeline");//doesn't seem to work
+					stmElt.onpause=pause;
+					stmElt.onplay=play;
+					stmElt.volume=.8;
+					
+					//ye no, too buggy
+					//stmElt.onseeked=(e)=>{setTime(e.target.currentTime)}
+					//stmElt.onseeking=(e)=>{setTime( e.target.currentTime)}
+					//stmElt.addEventListener("seeking", ()=>{seek|=1; console.log(seek)})
+					stmElt.ontimeupdate = (e)=>{timSld.value = 1000*e.target.currentTime;}
+					stmDiv.appendChild(p);
+					stmDiv.appendChild(stmElt);
+					stmElts.push(stmElt);
+					fetchAudioFile(stmElt);//make loading start instantly and not wait first
+					//timLab.innerText+=song.versions[ver].length;
+					
+					stmElt.oncanplay = ()=>timSld.max=stmElt.duration*1000;
+				});
+				else {
+					p=document.createElement("p");
+					p.innerText = "Full: ";
+					
+					stmElt=document.createElement("audio");
+					stmElt.src="/audio/"+song.versions[ver].file;
+					stmElt.controls="true";
+					//stmElt.controlsList.add("notimeline");//doesn't seem to work
+					stmElt.onpause=pause;
+					stmElt.onplay=play;
+					//stmElt.volume=.8;
+					stmElt.ontimeupdate = (e)=>{timSld.value = 1000*e.target.currentTime}
+					
+					stmDiv.appendChild(p);
+					stmDiv.appendChild(stmElt);
+					stmElts.push(stmElt);
+					fetchAudioFile(stmElt);
+					//setTimeout(()=>timSld.max=stmElt.duration*1000, 100);
+					
+					//stmElt.oncanplaythrough=e=>{if(!e.target.loaded){playable+=1;}e.target.loaded==true};//this is useless, the browser is bad at estimating this
+					//stmElt.oncanplaythrough=e=>{if(!e.target.classList.contains("loaded")){playable+=1;}e.target.classList.add("loaded")};
+					stmElt.oncanplay = ()=>timSld.max=stmElt.duration*1000;
+				}
+				
+				//timLab.innerText+=song.versions[ver].length;
+			}
+			function setTime(t){
+				stmElts.forEach(a=>{a.currentTime=t/1000});//dear fucking lord, why does it matter if it's a 206 or a 200, now it doesn't anymore with the fetchy boi
+			}
+			
+			function play(e){
+				console.log(playable)
+				if(playable==stmElts.length) stmElts.forEach(a=>{if(e.target!=a)a.play()});
+				else {e.preventDefault()}
+				setTime(timSld.value);
+			}
+			function pause(e){
+				stmElts.forEach(a=>{if(e.target!=a)a.pause()});
+			}
+			//https://stackoverflow.com/questions/37044064/html-audio-cant-set-currenttime
+			function fetchAudioFile(audio) {
+				var requestObj = new Request(audio.src, {
+					method: 'GET',
+					headers: {
+						'Accept-Ranges': '1000000000'
+					},
+					referrerPolicy: 'no-referrer'
+				});
+				
+				fetch(requestObj)/*.then(function (response) {
+					returnresponse;
+				})*/.then(async function (outcome) {
+					//console.log(await outcome)
+					const blob = await outcome.blob();
+					const url = window.URL.createObjectURL(blob);
+					audio.src = url;
+					playable+=1;
+				});
+			};
+			
+			
+		</script>
+	</body>
+</html>
