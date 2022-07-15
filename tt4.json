@@ -2,8 +2,8 @@
 	"name": "TT4",
 	"versions": [
 		{
-			"name": "Opening",
-			"file": "/tt4/tt4.mp3",
+			"name": "Full",
+			"file": "/tt4/TT4.mp3",
 			"stems": [
 				{
 					"name": "Mono",
