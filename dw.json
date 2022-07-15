@@ -65,7 +65,7 @@
 		},
 		{
 			"name": "Release",
-			"file": "/dw/release/full.wav",
+			"file": "/dw/release/full.flac",
 			"stems": [
 				{
 					"name": "Main bass",
