@@ -1,0 +1,31 @@
+{
+	"name": "TT4",
+	"versions": [
+		{
+			"name": "NT2.0.2",
+			"file": "/nt2/NT2.0.2.mp3",
+			"stems": [
+				{"name":"Drums","file":"/nt2/stems/nt2_drum.wav"},
+				{"name":"Mono Synth","file":"/nt2/stems/nt2_mono.wav"},
+				{"name":"Piano (i mean, it is muted but still, originally it was a piano)","file":"/nt2/stems/nt2_piano.wav"},
+				{"name":"Saw Synth","file":"/nt2/stems/nt2_saw.wav"},
+				{"name":"VA Synth","file":"/nt2/stems/nt2_va.mp3.wav"}
+			],
+			"length":"0:26"
+		},
+		{
+			"name": "NT2.0.1",
+			"file": "/nt2/NT2.0.1.mp3",
+			"stems": [],
+			"length":"0:26"
+		},
+		{
+			"name": "NT2",
+			"file": "/nt2/NT2.mp3",
+			"stems": [],
+			"length":"0:26"
+		},
+	],
+	"artists": "BunnyMS",
+	"comments": "VA only survived as an mp3 file, also: the full versions are mp3's"
+}
