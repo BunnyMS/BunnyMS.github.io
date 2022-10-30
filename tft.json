@@ -1,0 +1,85 @@
+{
+	"name": "Things from a thing",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tft/full-mix.wav",
+			"stems": [
+				{
+					"name": "Bass",
+					"file": "/tft/bass.wav"
+				},
+				{
+					"name": "Background b",
+					"file": "/tft/brass_ensemble_aka_backgroundb.wav"
+				},
+				{
+					"name": "Drums b",
+					"file": "/tft/concert_bass_drum_aka_drumsb.wav"
+				},
+				{
+					"name": "Drums a",
+					"file": "/tft/drumsa.wav"
+				},
+				{
+					"name": "Background a",
+					"file": "/tft/trombone_aka_backgrounda.wav"
+				},
+				{
+					"name": "Melody",
+					"file": "/tft/trumpet_aka_melody.wav"
+				},
+				{
+					"name": "Intro",
+					"file": "/tft/twm_aka_intro.wav"
+				}
+			],
+			"length":"0:40"
+		},
+		{
+			"name": "Simple",
+			"file": "/tft/simple-mix.wav",
+			"stems": [
+				{
+					"name": "Bass",
+					"file": "/tft/bass.wav"
+				},
+				{
+					"name": "Background b",
+					"file": "/tft/brass_ensemble_aka_backgroundb.wav"
+				},
+				{
+					"name": "Drums b",
+					"file": "/tft/concert_bass_drum_aka_drumsb.wav"
+				},
+				{
+					"name": "Drums a",
+					"file": "/tft/drumsa_alt.wav"
+				},
+				{
+					"name": "Background a",
+					"file": "/tft/trombone_aka_backgrounda.wav"
+				},
+				{
+					"name": "Melody",
+					"file": "/tft/trumpet_aka_melody.wav"
+				}
+			],
+			"length":"0:34"
+		},
+		{
+			"name": "Full - Streaming version",
+			"file": "/tft/full-mix compressed.wav",
+			"stems": [],
+			"length":"0:40"
+		},
+		{
+			"name": "Simple - Streaming version",
+			"file": "/tft/simple-mix compressed.wav",
+			"stems": [],
+			"length":"0:34"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}
