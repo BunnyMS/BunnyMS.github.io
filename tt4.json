@@ -27,6 +27,37 @@
 				}
 			],
 			"length":"0:22"
+		},
+		{
+			"name": "\"Synth-free version\" (note: May contain traces of synthesised sounds)",
+			"file": "/tt4/tt4_non-synth.wav",
+			"stems": [
+				{
+					"name": "Bass",
+					"file": "/tt4/tt4_ns_bass.wav"
+				},
+				{
+					"name": "Synthesiser",
+					"file": "/tt4/tt4_ns_synth.wav"
+				},
+				{
+					"name": "French horn, I think",
+					"file": "/tt4/tt4_ns_brass_fh.wav"
+				},
+				{
+					"name": "Brass a",
+					"file": "/tt4/tt4_ns_brass_a.wav"
+				},
+				{
+					"name": "Brass b",
+					"file": "/tt4/tt4_ns_brass_b.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/tt4/tt4_ns_drums.wav"
+				}
+			],
+			"length":"0:24"
 		}
 	],
 	"artists": "BunnyMS",
