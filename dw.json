@@ -33,7 +33,38 @@
 			"length":"0:44"
 		},
 		{
-			"name": "Closing",
+			"name": "Closing (new correct version)",
+			"file": "/dw/closing/full_fixed.wav",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dw/closing/bassa.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dw/closing/bassb.flac"
+				},
+				{
+					"name": "Melody synth a",
+					"file": "/dw/closing/mela.flac"
+				},
+				{
+					"name": "Melody b",
+					"file": "/dw/closing/melb.flac"
+				},
+				{
+					"name": "Melody c",
+					"file": "/dw/closing/doctorWhoOutroTrumpetFixed.wav"
+				},
+				{
+					"name": "Sound effect",
+					"file": "/dw/closing/sfx.flac"
+				}
+			],
+			"length":"1:08"
+		},
+		{
+			"name": "Closing (original incorrect version)",
 			"file": "/dw/closing/full.wav",
 			"stems": [
 				{

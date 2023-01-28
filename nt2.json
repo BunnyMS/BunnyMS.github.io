@@ -1,5 +1,5 @@
 {
-	"name": "TT4",
+	"name": "NT2",
 	"versions": [
 		{
 			"name": "NT2.0.2",
@@ -16,16 +16,16 @@
 		{
 			"name": "NT2.0.1",
 			"file": "/nt2/NT2.0.1.mp3",
-			"stems": [],
+			"stems": [{"name":"Full","file":"/nt2/NT2.0.1.mp3"}],
 			"length":"0:26"
 		},
 		{
 			"name": "NT2",
 			"file": "/nt2/NT2.mp3",
-			"stems": [],
+			"stems": [{"name":"Full","file":"/nt2/NT2.mp3"}],
 			"length":"0:26"
 		}
 	],
 	"artists": "BunnyMS",
-	"comments": "VA only survived as an mp3 file, also: the full versions are mp3's"
+	"comments": "VA only survived as an mp3 file, also: the full versions are mp3s"
 }
