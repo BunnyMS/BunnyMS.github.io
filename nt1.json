@@ -1,0 +1,29 @@
+{
+	"name": "NT1",
+	"versions": [
+		{
+			"name": "NT1.0.1",
+			"file": "/nt1/nt1f.wav",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/nt1/spc_urban.wav"
+				},
+				{
+					"name": "Melody a",
+					"file": "/nt1/saw.wav"
+				},
+				{
+					"name": "Swoosh",
+					"file": "/nt1/spc_swoosh.wav"
+				},
+				{
+					"name": "Melody b",
+					"file": "/nt1/simple.wav"
+				}
+			]
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}
