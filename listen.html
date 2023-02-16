@@ -1,7 +1,7 @@
 <html lang="en-nl">
 	<head>
 		<meta charset="utf-8">
-		<title>test</title>
+		<title>Song Explorer</title>
 		<link href="/style/main.css" rel="stylesheet">
 		<link href="/style/dark.css" rel="stylesheet">
 	</head>
@@ -70,6 +70,7 @@
 				//document.body.appendChild(timLab);
 				document.body.appendChild(timSld);
 				
+				document.title = song.name + " - " + song.artists;
 				
 				json.versions.forEach((ver, i)=>{
 					let v =document.createElement("option");

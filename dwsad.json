@@ -1,0 +1,116 @@
+{
+	"name": "Another bad Doctor Who Theme (MuseScore 4 instruments version)",
+	"versions": [
+		{
+			"name": "Original (Closing version)",
+			"file": "/dwsad/Another Doctor Who Theme - slour.flac",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dwsad/Another Doctor Who Theme - slour-Acoustic_Bass.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dwsad/Another Doctor Who Theme - slour-Square_Synthesizer.flac"
+				},
+				{
+					"name": "Melody piano",
+					"file": "/dwsad/Another Doctor Who Theme - slour-Piano.flac"
+				},
+				{
+					"name": "Melody violas",
+					"file": "/dwsad/Another Doctor Who Theme - slour-Violas_(section).flac"
+				},
+				{
+					"name": "Melody trumpet",
+					"file": "/dwsad/Another Doctor Who Theme - slour-Melody_Trumpet.flac"
+				}
+			],
+			"length":"1:05"
+		},
+		{
+			"name": "Full",
+			"file": "/dwsad/full2 - Copy.flac",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dwsad/full2 - Copy-Main_Bass.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dwsad/full2 - Copy-Grace_Bass.flac"
+				},
+				{
+					"name": "Melody piano",
+					"file": "/dwsad/full2 - Copy-Piano.flac"
+				},
+				{
+					"name": "Melody violas",
+					"file": "/dwsad/full2 - Copy-Violas.flac"
+				},
+				{
+					"name": "Melody trumpet",
+					"file": "/dwsad/full2 - Copy-Trumpet.flac"
+				}
+			],
+			"length":"2:26"
+		},
+		{
+			"name": "Closing (Wet version)",
+			"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix.flac",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix-Acoustic_Bass.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix-Square_Synthesizer.flac"
+				},
+				{
+					"name": "Melody piano",
+					"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix-Piano.flac"
+				},
+				{
+					"name": "Melody violas",
+					"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix-Violas_(section).flac"
+				},
+				{
+					"name": "Melody trumpet",
+					"file": "/dwsad/wet/Another Doctor Who Theme - slour, wet mix-Melody_Trumpet.flac"
+				}
+			],
+			"length":"1:05"
+		},
+		{
+			"name": "Full (Wet version)",
+			"file": "/dwsad/wet/full2 - Copy.flac",
+			"stems": [
+				{
+					"name": "Main bass",
+					"file": "/dwsad/wet/full2 - Copy-Main_Bass.flac"
+				},
+				{
+					"name": "\"Grace\" bass synth",
+					"file": "/dwsad/wet/full2 - Copy-Grace_Bass.flac"
+				},
+				{
+					"name": "Melody piano",
+					"file": "/dwsad/wet/full2 - Copy-Piano.flac"
+				},
+				{
+					"name": "Melody violas",
+					"file": "/dwsad/wet/full2 - Copy-Violas.flac"
+				},
+				{
+					"name": "Melody trumpet",
+					"file": "/dwsad/wet/full2 - Copy-Trumpet.flac"
+				}
+			],
+			"length":"2:26"
+		}
+	],
+	"artists": "BunnyMS; Ron Grainer",
+	"comments": "Doctor Who is a trademark of the BBC",
+	"notes": "This is basically the other one, just with musescore 4's new sample things and some Gravis samples."
+}

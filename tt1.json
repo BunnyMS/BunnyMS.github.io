@@ -1,0 +1,18 @@
+{
+	"name": "TT1",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tt1/tt1.mp3",
+			"stems": [
+				{
+					"name": "Full",
+					"file": "/tt1/tt1.ogg"
+				}
+			],
+			"length":"0:15"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": "This only survived in lossy mp3 and ogg/vorbis at 192kbps, no stems exist"
+}

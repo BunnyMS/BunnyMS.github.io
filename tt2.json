@@ -1,0 +1,67 @@
+{
+	"name": "TT2",
+	"versions": [
+		{
+			"name": "TT2.1",
+			"file": "/tt2/TT2.1.mp3",
+			"stems": [
+				{
+					"name": "Full",
+					"file": "/tt2/tt2.1.ogg"
+				}
+			],
+			"length":"0:21"
+		},
+		{
+			"name": "TT2.2",
+			"file": "/tt2/tt2.2.mp3",
+			"stems": [
+				{
+					"name": "Full",
+					"file": "/tt2/tt2.2.ogg"
+				}
+			],
+			"length":"0:30"
+		},
+		{
+			"name": "TT2.2.5",
+			"file": "/tt2/tt2.2.5.mp3",
+			"stems": [
+				{
+					"name": "Full",
+					"file": "/tt2/tt2.2.5.mp3"
+				}
+			],
+			"length":"0:30"
+		},
+		{
+			"name": "TT2.2 (Alternate Mix)",
+			"file": "/tt2/tt2.2-alt.flac",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/tt2/2.2_alt/drums.flac"
+				},
+				{
+					"name": "Noiser",
+					"file": "/tt2/2.2_alt/noiser.flac"
+				},
+				{
+					"name": "Synth a",
+					"file": "/tt2/2.2_alt/synth_a.flac"
+				},
+				{
+					"name": "Synth b",
+					"file": "/tt2/2.2_alt/synth_b.mp3.flac"
+				},
+				{
+					"name": "Synth c",
+					"file": "/tt2/2.2_alt/synth_c.mp3.flac"
+				}
+			],
+			"length":"0:31"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": "The \"Alternate Mix\" of TT2.2 is the only version that has stems. Everything except the \"Alternate Mix\" of TT2.2 is lossy. Even then, synth b and c are converted from mp3, so eh."
+}

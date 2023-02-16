@@ -1,0 +1,64 @@
+{
+	"name": "TT3",
+	"versions": [
+		{
+			"name": "TT3",
+			"file": "/tt3/TT3.mp3",
+			"stems": [
+				{
+					"name": "Full",
+					"file": "/tt3/tt3.ogg"
+				}
+			],
+			"length":"0:30"
+		},
+		{
+			"name": "TT3 (Remaster)",
+			"file": "/tt3/TT3_proper_remaster.flac",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/tt3/proper_remaster/drums.flac"
+				},
+				{
+					"name": "Synth a",
+					"file": "/tt3/proper_remaster/synth_a.flac"
+				},
+				{
+					"name": "Synth b",
+					"file": "/tt3/proper_remaster/synth_b.flac"
+				},
+				{
+					"name": "Synth c",
+					"file": "/tt3/proper_remaster/synth_c.flac"
+				}
+			],
+			"length":"0:46"
+		},
+		{
+			"name": "TT3 (Improper remaster)",
+			"file": "/tt3/TT3_improper_remaster.flac",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/tt3/improper_remaster/drums.flac"
+				},
+				{
+					"name": "Synth a",
+					"file": "/tt3/improper_remaster/synth_a.flac"
+				},
+				{
+					"name": "Synth b",
+					"file": "/tt3/improper_remaster/synth_b.flac"
+				},
+				{
+					"name": "Synth c",
+					"file": "/tt3/improper_remaster/synth_c.flac"
+				}
+			],
+			"length":"0:46"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": "The normal version is an mp3/ogg."
+}
