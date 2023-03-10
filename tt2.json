@@ -14,7 +14,7 @@
 		},
 		{
 			"name": "TT2.2",
-			"file": "/tt2/tt2.2.mp3",
+			"file": "/tt2/TT2.2.mp3",
 			"stems": [
 				{
 					"name": "Full",
@@ -25,11 +25,11 @@
 		},
 		{
 			"name": "TT2.2.5",
-			"file": "/tt2/tt2.2.5.mp3",
+			"file": "/tt2/TT2.2.5.mp3",
 			"stems": [
 				{
 					"name": "Full",
-					"file": "/tt2/tt2.2.5.mp3"
+					"file": "/tt2/TT2.2.5.mp3"
 				}
 			],
 			"length":"0:30"
