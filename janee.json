@@ -1,0 +1,41 @@
+{
+	"name": "Ja, Nee! (Feat. TTS voice nl-NL and AHE)",
+	"versions": [
+		{
+			"name": "Ja, Nee! (Feat. TTS voice nl-NL and AHE)",
+			"file": "/est/janee/Janee (Featuring TTS voice NL_nl female).wav",
+			"stems": [
+				{
+					"name": "Vocals",
+					"file": "/est/janee/vocals.flac"
+				},
+				{
+					"name": "\"Pizzicato\" Section",
+					"file": "/est/janee/sam_piz.flac"
+				},
+				{
+					"name": "Drum",
+					"file": "/est/janee/sam_drm.flac"
+				}
+			],
+			"length":"0:05"
+		},
+		{
+			"name": "Ja, Nee! (Instrumental)",
+			"file": "/est/janee/Janee (Instrumental).wav",
+			"stems": [
+				{
+					"name": "\"Pizzicato\" Section",
+					"file": "/est/janee/sam_piz.flac"
+				},
+				{
+					"name": "Drum",
+					"file": "/est/janee/sam_drm.flac"
+				}
+			],
+			"length":"0:11"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}

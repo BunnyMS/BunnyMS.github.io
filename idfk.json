@@ -1,0 +1,26 @@
+{
+	"name": "IDFK",
+	"versions": [
+		{
+			"name": "IDFK",
+			"file": "/est/idfk/IDFK.wav",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/est/idfk/sam_drm.wav"
+				},
+				{
+					"name": "Piano",
+					"file": "/est/idfk/sam_pno.wav"
+				},
+				{
+					"name": "Voices",
+					"file": "/est/idfk/sam_aah.wav"
+				}
+			],
+			"length":"0:15"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}

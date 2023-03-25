@@ -1,0 +1,84 @@
+{
+	"name": "Creppy Bois",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/est/crep/Creppy Bois - Bonus Track.wav",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/est/crep/sth_a.wav"
+				},
+				{
+					"name": "Synth b",
+					"file": "/est/crep/sth_b.wav"
+				},
+				{
+					"name": "Synth c",
+					"file": "/est/crep/sth_c.wav"
+				},
+				{
+					"name": "Synth d",
+					"file": "/est/crep/sth_d.wav"
+				},
+				{
+					"name": "Synth e",
+					"file": "/est/crep/sth_e.wav"
+				},
+				{
+					"name": "Synth f",
+					"file": "/est/crep/sth_f.wav"
+				},
+				{
+					"name": "Synth g",
+					"file": "/est/crep/sth_g.wav"
+				}
+			],
+			"length":"0:49"
+		},
+		{
+			"name": "Part one",
+			"file": "/est/crep/Creppy Boi 1.wav",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/est/crep/sth_a.wav"
+				},
+				{
+					"name": "Synth b",
+					"file": "/est/crep/sth_b.wav"
+				}
+			],
+			"length":"0:49"
+		},
+		{
+			"name": "Part two",
+			"file": "/est/crep/Creppy Boi 2.wav",
+			"stems": [
+				{
+					"name": "Synth c",
+					"file": "/est/crep/sth_c.wav"
+				},
+				{
+					"name": "Synth d",
+					"file": "/est/crep/sth_d.wav"
+				},
+				{
+					"name": "Synth e",
+					"file": "/est/crep/sth_e.wav"
+				},
+				{
+					"name": "Synth f",
+					"file": "/est/crep/sth_f.wav"
+				},
+				{
+					"name": "Synth g",
+					"file": "/est/crep/sth_g.wav"
+				}
+			],
+			"length":"0:28"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}

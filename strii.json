@@ -1,0 +1,75 @@
+{
+	"name": "Strings II",
+	"versions": [
+		{
+			"name": "Strings II (Full)",
+			"file": "/est/strii/STRINGSII - Bonus Track.wav",
+			"stems": [
+				{
+					"name": "Strings A",
+					"file": "/est/strii/sam_st2.wav"
+				},
+				{
+					"name": "Strings B",
+					"file": "/est/strii/sam_st1.wav"
+				},
+				{
+					"name": "Organ",
+					"file": "/est/strii/sam_org.wav"
+				},
+				{
+					"name": "Bass",
+					"file": "/est/strii/sam_bas.wav"
+				},
+				{
+					"name": "Sampled synth",
+					"file": "/est/strii/sam_sth.wav"
+				}
+			],
+			"length":"0:29"
+		},
+		{
+			"name": "Part One",
+			"file": "/est/strii/Strings II 1 - Totally Not Plagiarism.wav",
+			"stems": [
+				{
+					"name": "Strings B",
+					"file": "/est/strii/sam_st1.wav"
+				}
+			],
+			"length":"0:13"
+		},
+		{
+			"name": "Part Two",
+			"file": "/est/strii/Strings II 2.wav",
+			"stems": [
+				{
+					"name": "Strings A",
+					"file": "/est/strii/sam_st2.wav"
+				},
+				{
+					"name": "Sampled synth",
+					"file": "/est/strii/sam_sth.wav"
+				}
+			],
+			"length":"0:23"
+		},
+		{
+			"name": "C/",
+			"file": "/est/strii/Strings II.wav",
+			"stems": [
+				{
+					"name": "Organ",
+					"file": "/est/strii/sam_org.wav"
+				},
+				{
+					"name": "Bass",
+					"file": "/est/strii/sam_bas.wav"
+				}
+			],
+			"length":"0:05"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": ""
+}
