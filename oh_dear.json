@@ -1,0 +1,84 @@
+{
+	"name": "Oh Dear, Oh Dear...",
+	"versions": [
+		{
+			"name": "Radio edit",
+			"file": "/oh_dear/oh_dear_superior_version.wav",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/oh_dear/superior_cut/sn_a.wav"
+				},
+				{
+					"name": "Synth b",
+					"file": "/oh_dear/superior_cut/sn_b.wav"
+				},
+				{
+					"name": "_Strings",
+					"file": "/oh_dear/superior_cut/spl_str.wav"
+				},
+				{
+					"name": "The lil sampled piz. strings",
+					"file": "/oh_dear/superior_cut/spl_piz.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/oh_dear/superior_cut/spl_drm.wav"
+				}
+			],
+			"length":"1:11"
+		},
+		{
+			"name": "Full",
+			"file": "/oh_dear/oh dear oh dear.wav",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/oh_dear/main_saw.wav"
+				},
+				{
+					"name": "Synth b",
+					"file": "/oh_dear/main_sqr.wav"
+				},
+				{
+					"name": "_Strings",
+					"file": "/oh_dear/sam_str.wav"
+				},
+				{
+					"name": "The lil sampled piz. strings",
+					"file": "/oh_dear/sam_piz.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/oh_dear/sam_drm.wav"
+				}
+			],
+			"length":"1:41"
+		},
+		{
+			"name": "Trailer version",
+			"file": "/oh_dear/oh dear trailer with pre.wav",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/oh_dear/trailer_cues/sn. a.wav"
+				},
+				{
+					"name": "Main melody",
+					"file": "/oh_dear/trailer_cues/spl. el. pno.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/oh_dear/trailer_cues/spl. drm.+piz. str.wav"
+				},
+				{
+					"name": "The lil reverse reverbs",
+					"file": "/oh_dear/trailer_cues/pre.wav"
+				}
+			],
+			"length":"1:11"
+		}
+	],
+	"artists": "BunnyMS",
+	"comments": "VA only survived as an mp3 file, also: the full version is an mp3"
+}
