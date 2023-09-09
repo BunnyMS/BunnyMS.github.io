@@ -1,0 +1,29 @@
+{
+	"name": "Agents of S.H.I.E.L.D.",
+	"versions": [
+		{
+			"name": "Agents of S.H.I.E.L.D.",
+			"file": "/aos/full.wav",
+			"stems": [
+				{
+					"name": "Strings",
+					"file": "/aos/Sam Strings.wav"
+				},
+				{
+					"name": "Brass",
+					"file": "/aos/Sam Brass.wav"
+				},
+				{
+					"name": "Synths",
+					"file": "/aos/Synth.wav"
+				},
+				{
+					"name": "Drums",
+					"file": "/aos/Sam Drum.wav"
+				}
+			]
+		}
+	],
+	"artists": "BunnyMS; Bear McCreary",
+	"comments": "Agents of S.H.I.E.L.D and theme © and ® Marvel"
+}
