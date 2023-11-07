@@ -1,0 +1,26 @@
+{
+	"name": "so like this one doesn't have a title yet",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/neh/full.wav",
+			"stems": [
+				{
+					"name": "Brass",
+					"file": "/neh/Sam brass.wav"
+				},
+				{
+					"name": "Vocals",
+					"file": "/neh/Sam vocals.wav"
+				},
+				{
+					"name": "Synth",
+					"file": "/neh/Synth ww.wav"
+				}
+			],
+			"length":"1:04"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "This one would have been called \"Nor Do I\" (after the project file name \"idfk man\"), \"Nehalennia\" or \"Den Hôgen Hil\" (or however you spell /də nɔɦən ɪl/)"
+}
