@@ -68,18 +68,18 @@
 			"length":"0:34"
 		},
 		{
-			"name": "Full - Streaming version",
+			"name": "Full - Compressed version",
 			"file": "/tft/full-mix compressed.wav",
 			"stems": [],
 			"length":"0:40"
 		},
 		{
-			"name": "Simple - Streaming version",
+			"name": "Simple - Compressed version",
 			"file": "/tft/simple-mix compressed.wav",
 			"stems": [],
 			"length":"0:34"
 		}
 	],
-	"artists": "BunnyMS",
+	"artists": "Bunny",
 	"comments": ""
 }
