@@ -1,0 +1,26 @@
+{
+	"name": "Anti-Cube",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/ac/full.wav",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/ac/sam_drums.wav"
+				},
+				{
+					"name": "Bass",
+					"file": "/ac/sam_bass.wav"
+				},
+				{
+					"name": "Synths",
+					"file": "/ac/Synths.wav"
+				}
+			],
+			"length":"0:53"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "When i made this, i thought Cube would hate this, so I named it this."
+}

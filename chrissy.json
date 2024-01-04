@@ -1,0 +1,38 @@
+{
+	"name": "Christmas, yay",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/ch2023/full.wav",
+			"stems": [
+				{
+					"name": "Sampled Bell",
+					"file": "/ch2023/sam_bell.wav"
+				},
+				{
+					"name": "Synth Bell",
+					"file": "/ch2023/syn_bell.wav"
+				},
+				{
+					"name": "Sampled Strings",
+					"file": "/ch2023/sam_str.wav"
+				},
+				{
+					"name": "Sampled Percussion",
+					"file": "/ch2023/sam_perc.wav"
+				},
+				{
+					"name": "Sampled Piano",
+					"file": "/ch2023/sam_pno.wav"
+				},
+				{
+					"name": "Sampled Synth",
+					"file": "/ch2023/sam_synth.wav"
+				}
+			],
+			"length":"0:35"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Christmas 2023"
+}
