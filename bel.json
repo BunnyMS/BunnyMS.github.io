@@ -1,0 +1,38 @@
+{
+	"name": "Bel",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/bel/full.wav",
+			"stems": [
+				{
+					"name": "Bel",
+					"file": "/bel/Bel.mp3"
+				},
+				{
+					"name": "Perc/SFX",
+					"file": "/bel/Perc_SFX.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/bel/Synth.mp3"
+				},
+				{
+					"name": "Sampled Piano",
+					"file": "/bel/Piano.mp3"
+				},
+				{
+					"name": "Sampled Guitar",
+					"file": "/bel/E_Guitar.mp3"
+				},
+				{
+					"name": "Verb",
+					"file": "/bel/Verb.mp3"
+				}
+			],
+			"length":"1:04"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Bel Afval"
+}

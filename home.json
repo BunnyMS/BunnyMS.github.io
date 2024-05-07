@@ -1,0 +1,54 @@
+{
+	"name": "Home",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/home/full.mp3",
+			"stems": [
+				{
+					"name": "Sampled Brass",
+					"file": "/home/Bras.mp3"
+				},
+				{
+					"name": "Sampled Woodwinds",
+					"file": "/home/Woodwinds.mp3"
+				},
+				{
+					"name": "Sampled Drums",
+					"file": "/home/Drums.mp3"
+				},
+				{
+					"name": "Sampled Piano",
+					"file": "/home/Piano.mp3"
+				},
+				{
+					"name": "Sampled Synths",
+					"file": "/home/Barn Synths.mp3"
+				},
+				{
+					"name": "Synths",
+					"file": "/home/True Synths.mp3"
+				},
+				{
+					"name": "Sampled Guitar",
+					"file": "/home/E Guitar.mp3"
+				},
+				{
+					"name": "Sampled Strings",
+					"file": "/home/Strings.mp3"
+				},
+				{
+					"name": "Sampled Harp",
+					"file": "/home/Herp.mp3"
+				},
+				{
+					"name": "Other Sampled",
+					"file": "/home/Other.mp3"
+				}
+			],
+			"length":"7:16"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Home Suite"
+}
