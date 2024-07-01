@@ -1,0 +1,34 @@
+{
+	"name": "Vuulte",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/vuulte/full.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/vuulte/sn.mp3"
+				},
+				{
+					"name": "Drums",
+					"file": "/vuulte/dr.mp3"
+				},
+				{
+					"name": "Woodwinds",
+					"file": "/vuulte/ww.mp3"
+				},
+				{
+					"name": "Horns",
+					"file": "/vuulte/fh.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/vuulte/vl.mp3"
+				}
+			],
+			"length":"1:40"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Fluitekruit"
+}
