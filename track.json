@@ -1,0 +1,25 @@
+{
+	"name": "Track",
+	"versions": [
+		{
+			"name": "Track",
+			"file": "/track/track.mp3",
+			"stems": [
+				{
+					"name": "Main Melody",
+					"file": "/track/Bunny's Not A Train.mp3"
+				},
+				{
+					"name": "Percussion (Earthquake Sounds)",
+					"file": "/track/Hilowitz's Earthquake Sounds.mp3"
+				},
+				{
+					"name": "Piano",
+					"file": "/track/8dio's 1928 Steinway.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": ""
+}
