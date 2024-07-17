@@ -96,6 +96,12 @@
 			.v7 {
 				background-image: url("/img/vers_7.svg");
 			}
+			.v11 {
+				background-image: url("/img/vers_11.svg");
+			}
+			.v12 {
+				background-image: url("/img/vers_12.svg");
+			}
 			.lsr-img {
 				height: 50vh;
 				width: 50vh;

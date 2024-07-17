@@ -1,0 +1,42 @@
+{
+	"name": "We'll return in a moment.",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/cuttoads/full.mp3",
+			"stems": [
+				{
+					"name": "Strings",
+					"file": "/cuttoads/strings.mp3"
+				},
+				{
+					"name": "Piano",
+					"file": "/cuttoads/8dioPiano.mp3"
+				},
+				{
+					"name": "Woodwinds",
+					"file": "/cuttoads/woodwinds.mp3"
+				},
+				{
+					"name": "Belly stuff",
+					"file": "/cuttoads/chromaticPerc.mp3"
+				},
+				{
+					"name": "Trombones",
+					"file": "/cuttoads/trombone.mp3"
+				},
+				{
+					"name": "D. Bass",
+					"file": "/cuttoads/doubleBass.mp3"
+				},
+				{
+					"name": "Choir",
+					"file": "/cuttoads/choir.mp3"
+				}
+			],
+			"length":"0:33"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Cut to ads"
+}
