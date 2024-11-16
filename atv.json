@@ -1,0 +1,61 @@
+{
+	"name": "ATV",
+	"versions": [
+		{
+			"name": "Main",
+			"file": "/atv/mix.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/atv/Synths.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/atv/Strings.mp3"
+				},
+				{
+					"name": "Brass/Fx",
+					"file": "/atv/Brass+fx.mp3"
+				},
+				{
+					"name": "Perc",
+					"file": "/atv/Percussion.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/atv/Choirs.mp3"
+				}
+			],
+			"length":"2:24"
+		},
+		{
+			"name": "_",
+			"file": "/atv/_/mix_underscore.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/atv/_/Synths.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/atv/_/Strings.mp3"
+				},
+				{
+					"name": "Brass/Fx",
+					"file": "/atv/_/Brass+fx.mp3"
+				},
+				{
+					"name": "Perc",
+					"file": "/atv/_/Percussion.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/atv/_/Choirs.mp3"
+				}
+			],
+			"length":"2:24"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "One of the first things i made in a proper daw, like with vst support and shit, mixed in audacity though, as there was project file corruption afoot."
+}
