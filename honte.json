@@ -1,0 +1,50 @@
+{
+	"name": "Scaldis Occidentalis",
+	"versions": [
+		{
+			"name": "Full+C/",
+			"file": "/honte/full.mp3",
+			"stems": [
+				{
+					"name": "Brass",
+					"file": "/honte/brass.mp3"
+				},
+				{
+					"name": "Choir",
+					"file": "/honte/choir.mp3"
+				},
+				{
+					"name": "Harp",
+					"file": "/honte/harp.mp3"
+				},
+				{
+					"name": "Mandriola",
+					"file": "/honte/mandriola.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/honte/percussion.mp3"
+				},
+				{
+					"name": "Pipes, Irish ones, I think...",
+					"file": "/honte/pipes.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/honte/strings.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/honte/synth.mp3"
+				},
+				{
+					"name": "Orchestral woodwinds",
+					"file": "/honte/woodwinds.mp3"
+				}
+			],
+			"length":"1:33"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Westerschelde ofte de Honte"
+}
