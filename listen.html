@@ -16,11 +16,12 @@
 			let verSel;
 			let stmSel;
 			let playable=0;
-			
+			let which;
+			const multitrack = document.createElement("a");
 			fetch("list.json")
 			.then(lr => lr.json())
 			.then(lj => {
-			const which = (new URL(window.location.href).searchParams.get("song"))*1||0;
+			which = (new URL(window.location.href).searchParams.get("song"))*1||0;
 			fetch(lj[which])
 			.then(response => response.json())
 			.then(json => {
@@ -65,10 +66,11 @@
 				document.body.appendChild(artTxt);
 				document.body.appendChild(verLab);
 				document.body.appendChild(verSel);
-				document.body.appendChild(stmLab);
-				document.body.appendChild(stmSel);
+				//document.body.appendChild(stmLab);
+				//document.body.appendChild(stmSel);
 				//document.body.appendChild(timLab);
 				document.body.appendChild(timSld);
+				multitrack.innerText = "Listen to the multitrack";
 				
 				document.title = song.name + " - " + song.artists;
 				
@@ -137,6 +139,9 @@
 					//stmElt.oncanplaythrough=e=>{if(!e.target.classList.contains("loaded")){playable+=1;}e.target.classList.add("loaded")};
 					stmElt.oncanplay = ()=>timSld.max=stmElt.duration*1000;
 				}
+				
+				multitrack.href = `./multitrack?song=${which}&version=${ver}`;
+				document.body.appendChild(multitrack);
 				
 				//timLab.innerText+=song.versions[ver].length;
 			}

@@ -1,0 +1,871 @@
+<!DOCTYPE HTML>
+<html lang="en-NL">
+	<head>
+		<title>Song Explorer 2</title>
+		<script src="https://github.com/adriaan1313/multitrack-audio-player/releases/download/v1.0.3%2Bpatch-1%2Bget-buffer/main.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></link>
+		<style>
+			:root {
+				--accent-colour: #FA0;
+			}
+		
+			#main-controls, #tracks {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				min-height: 80pt;
+				border-radius: 5px;
+				border: 1px solid #333;
+				box-sizing: border-box;
+				contain: content;
+				padding-top: 8px;
+			}
+			body {
+				margin: 0;
+				padding: 8px;
+				background: #111;
+				color: white;
+				font-family: "Droid Sans", DroidSans, Roboto,"Gill Sans","Gill Sans MT",GillSans,"Helvetica Neue",Arial,Arial,sans-serif;
+			}
+			#multitrack {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				contain: content;
+				border-radius: 5px;
+				/*border: 1px solid #333;*/
+			}
+			.slider-range {
+				width: 100%;
+				margin: 0;
+				opacity: 0;
+				position: fixed;
+				cursor: pointer;
+				height: 16px;
+			}
+			.slider-bar {
+				width: calc(100% - 16px);
+				margin: 0;
+				height: 100%;
+				position: fixed;
+				transform: translateX(8px);
+			}
+			.slider-track {
+				width: 100%;
+				margin: 0;
+				height: 4px;
+				position: fixed;
+				background: #aaa;
+				bottom: 50%;
+				transform: translateY(50%);
+			}
+			.slider-value {
+				margin: 0;
+				height: 4px;
+				position: fixed;
+				background: var(--accent-colour);
+				bottom: 50%;
+				transform: translateY(50%);
+			}
+			.slider-handle {
+				margin: 0;
+				height: 16px;
+				position: fixed;
+				background: var(--accent-colour);
+				width: 2.5px;
+				bottom: 50%;
+				transform: translate(-50%, 50%);
+			}
+			
+			.player-button {
+				width: 30px;
+				height: 30px;
+				background-color: #111;
+				color: #ccc;
+				border: 1px solid #333;
+				cursor: pointer;
+			}
+			.player-button:hover {
+				background-color: #222;
+				color: var(--accent-colour);
+			}
+			
+			#main-buttons {
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+			}
+			
+			.slider-holder {
+				height: 16px;
+				contain: content;
+			}
+			#progress-holder {
+				width: calc(100% - 100px); 
+			}
+			
+			#progress-text, #length-text {
+				text-align: center;
+				line-height: 100%;
+			}
+			#progress {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#volh {
+				display: flex;
+				align-items: center;
+			}
+			#volh > div {
+				display: inline-block;
+			}
+			
+			#tracks {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+			
+			#tracks > div {
+				display: flex;
+				height: 28px;
+				align-items: center;
+			}
+			
+			#tracks > div > button {
+				width: 16px;
+				height: 16px;
+				box-sizing: content-box;
+				padding: 0;
+				margin: 0;
+				background: #0000;
+				border-radius: 9px;
+				border: none;
+				margin-left: 4px;
+				cursor: pointer;
+				border: 1px solid;
+				font-weight: 500;
+				min-width: 16px;
+				min-height: 16px;
+			}
+			
+			#tracks > div > button[data-solo-active="false"] {
+				color: #0fb;
+				border-color: #0fb;
+			}
+			#tracks > div > button[data-mute-active="false"] {
+				color: #f00;
+				border-color: #f00;
+			}
+			#tracks > div > button[data-mute-active="true"] {
+				color: #000;
+				background: #f00;
+				border-color: #f00;
+			}
+			#tracks > div > button[data-solo-active="true"] {
+				color: #000;
+				background: #0fb;
+				border-color: #0fb;
+			}
+			
+			#loader {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #7f7f7f7f;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				position: fixed;
+			}
+			
+			#loader > span {
+				animation: rotation 1s linear infinite;
+			}
+			@keyframes rotation {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			h2 {
+				margin: 0;
+				display: flex;
+				gap: 6px;
+			}
+			p {
+				margin: 0;
+			}
+			select {
+				min-height: 27px;
+				border: none;
+				background: none;
+				color: white;
+				cursor: pointer;
+			}
+			option {
+				background: black;
+			}
+			
+			#volh > .fa-solid {
+				width: 18px;
+				height: 18px;
+				font-size: 14px;
+				text-align: center;
+				margin-left: 26px;
+				line-height: 18px;
+			}
+			
+			.stem-title {
+				max-width: 200px;
+				width: 200px;
+				text-overflow: clip;
+			}
+			
+			.waveform {
+				flex-grow: 1;
+				height: 100%;
+				mask-size: 100% 100%;
+				width: 200px;
+			}
+			
+			.waveform > .slider-range {
+				height: 100%;
+			}
+			
+			.waveform-track {
+				height: 100%;
+				background: linear-gradient( var( --progress-gradient ) );
+				mask-size: 100% 100%;
+			}
+			
+			#tabs > a {
+				border-top: 1px solid #333;
+				border-left: 1px solid #333;
+				border-right: 1px solid #333;
+				border-radius: 8px 8px 0px 0px;
+				color: #aaa;
+				padding: 2px;
+			}
+			
+			#tabs > a[href="#"] {
+				background: #333;
+				border-color: #444;
+				color: white;
+			}
+			
+			.notice {
+				color: #aaa;
+				font-size: 10pt;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--<div id="tabs">
+			<a href="./singleTrack.html">Play</a>
+			<a href="#">Multitrack player</a>
+		</div>-->
+		<div id="multitrack">
+			<div>
+				<H2 id="title">Title</H2>
+				<p>by <b id="author">Author</b></p>
+			</div>
+			<div id="main-controls">
+				<div id="main-buttons">
+					<button class="fa-solid player-button" id="reset-button" title="reset mix">&#xf2ea;</button>
+					<button class="fa-solid player-button" id="stop-button" title="stop">&#xf048;</button>
+					<button class="fa-solid player-button" id="back-button" title="skip back">&#xf04a;</button>
+					<button class="fa-solid player-button" id="play-button" title="play/pause">&#xf04b;</button><!-- pause = f04c-->
+					<button class="fa-solid player-button" id="forward-button" title="skip forward">&#xf04e;</button>
+				</div>
+				<div id="progress">
+					<div id="progress-text">
+						0:00
+					</div>
+					<div id="progress-holder"></div>
+					<div id="length-text">
+						0:00
+					</div>
+				</div>
+				<div id="volh" title="global volume">
+					<div class="fa-solid">&#xf028;</div>
+					<div id="vol"></div>
+				</div>
+			</div>
+			<div id="tracks"></div>
+			<div style="/*display: none;*/" id="loader" >
+				<span class="fa-solid">&#xf110;</span>
+			</div>
+			<p><i id="notes"></i></p>
+		</div>
+		<a href="./thirdparty.txt" class="notice">Used third-party libraries</a>
+		<script>
+			class Slider {
+				holder;
+				valueBar;
+				handle;
+				range;
+				listeners = [];
+				
+				constructor(elt, def){
+					if(elt){
+						this.holder = elt
+					} else {
+						this.holder = document.createElement("div");
+					}
+					
+					this.holder.classList.add("slider-holder");
+					
+					const bar = document.createElement("div");
+					bar.classList.add("slider-bar");
+					this.holder.appendChild(bar);
+					
+					const track = document.createElement("div");
+					track.classList.add("slider-track");
+					bar.appendChild(track);
+					
+					this.valueBar = document.createElement("div");
+					this.valueBar.classList.add("slider-value");
+					bar.appendChild(this.valueBar);
+					
+					this.handle = document.createElement("div");
+					this.handle.classList.add("slider-handle");
+					bar.appendChild(this.handle);
+					
+					this.range = document.createElement("input");
+					this.range.classList.add("slider-range");
+					this.range.min = 0;
+					this.range.max = 100;
+					this.range.step = "0.000000000000000001";
+					this.range.type = "range";
+					
+					this.range.addEventListener("input", (e)=>{
+						this.valueBar.style.width = `${this.range.value}%`;
+						this.handle.style.left = `${this.range.value}%`;
+						for(const listener of this.listeners){
+							listener(e);
+						}
+					});
+					
+					this.range.addEventListener("wheel", (e)=>{
+						const val = (/*-e.deltaY + */e.deltaX) / 20;
+						//we don't want people actually trying to scroll to trigger this.
+						//peope barely use the horizontal scrolling to scroll the page.
+						if(val){
+							this.value += val;
+							for(const listener of this.listeners){
+								listener(e);
+							}
+						}
+					});
+					
+					if(def){
+						this.value = def;
+						this.range.addEventListener("dblclick", (e)=>{
+							this.value = def;
+							for(const listener of this.listeners){
+								listener(e);
+							}
+						});
+					}
+					
+					this.holder.appendChild(bar);
+					this.holder.appendChild(this.range);
+				}
+				
+				get value() {
+					return this.range.value * 1;
+				}
+				
+				set value(value) {
+					this.range.value = value;
+					this.valueBar.style.width = `${this.range.value}%`;
+					this.handle.style.left = `${this.range.value}%`;
+				}
+				
+				addListener(listener){
+					this.listeners.push(listener);
+				}
+				
+				addEventListener(type, listener, options){
+					this.range.addEventListener(type, listener, options);
+				}
+			}
+			
+			class WaveformSlider {
+				holder;
+				range;
+				track;
+				listeners = [];
+				
+				constructor(elt){
+					if(elt){
+						this.holder = elt
+					} else {
+						this.holder = document.createElement("div");
+					}
+					
+					this.holder.classList.add("slider-holder");
+					this.holder.classList.add("waveform");
+					
+					this.track = document.createElement("div");
+					this.track.classList.add("slider-bar");
+					this.track.classList.add("waveform-track");
+					this.holder.appendChild(this.track);
+					
+					this.range = document.createElement("input");
+					this.range.classList.add("slider-range");
+					this.range.min = 0;
+					this.range.max = 100;
+					this.range.step = "0.000000000000000001";
+					this.range.type = "range";
+					
+					this.range.addEventListener("input", (e)=>{
+						for(const listener of this.listeners){
+							listener(e);
+						}
+					});
+					
+					
+					this.holder.appendChild(this.range);
+				}
+				
+				get value() {
+					return this.range.value;
+				}
+				
+				set value(value){
+					this.range.value = value;
+				}
+				
+				addListener(listener){
+					this.listeners.push(listener);
+				}
+				
+				addEventListener(type, listener, options){
+					this.range.addEventListener(type, listener, options);
+				}
+			}
+			
+			function secToTS(sec){
+				return `${Math.floor(sec/60)}:${(sec%60).toFixed(0).padStart(2, "0")}`
+			}
+		
+			let track;
+			
+			const progress = new Slider(document.getElementById("progress-holder"));
+			
+			const volume = new Slider(document.getElementById("vol"), 100);
+			volume.holder.style.width = "150px";
+			
+			const resetButton = document.getElementById("reset-button");
+			const stopButton = document.getElementById("stop-button");
+			const backButton = document.getElementById("back-button");
+			const playButton = document.getElementById("play-button");
+			const fwdButton = document.getElementById("forward-button");
+			const lengthText = document.getElementById("length-text");
+			const progressText = document.getElementById("progress-text");
+			const loader = document.getElementById("loader");
+			const author = document.getElementById("author");
+			const title = document.getElementById("title");
+			const notes = document.getElementById("notes");
+			
+			
+			const hasMediaSession = "mediaSession" in navigator;
+			const stateDict = {
+				duration: 0,
+				position: 0
+			}
+		
+			const BASE_URL = "https://bunnyms.github.io/audio/";
+			const tracks = [];
+			const trackHolder = document.getElementById("tracks");
+			
+			let player;
+			let currentVersion;
+			
+			const audioContext = new AudioContext();
+			const cssRoot = document.querySelector(':root');
+			
+			function stateChange(state, error) { 
+				if(error){
+					console.error("error", error);
+				}
+				console.log("state", state); 
+				switch(state){
+					case "ready":
+						lengthText.innerText = secToTS(player.duration);
+						stateDict.duration = player.duration;
+						//nu moeten we een mask-image genereren per track
+						for (const track of player.tracks) {
+							generateWaveform(track);
+						}
+						positionChange(player.position);
+						loader.style.display = "none";
+						break;
+				}
+			}
+			
+			function playStateChange(playState) {
+				console.log("playState", playState); 
+				switch(playState){
+					case "stopped":
+					case "pausing":
+						playButton.innerText = "\uf04b";
+						if(hasMediaSession) navigator.mediaSession.playbackState = "paused";
+						break;
+					case "started": 
+						playButton.innerText = "\uf04c";
+						if(hasMediaSession) navigator.mediaSession.playbackState = "playing";
+						break;
+				}
+			}
+			
+			function positionChange(position) { 
+				const val = position / player.duration * 100;
+				progress.value = val;
+				progressText.innerText = secToTS(position);
+				stateDict.position = position;
+				if(hasMediaSession) navigator.mediaSession.setPositionState(stateDict);
+				
+				for(const track of player.tracks){
+					track.customProps.waveform.value = val;
+				}
+				cssRoot.style.setProperty("--progress-gradient", `90deg, var(--accent-colour) 0% ${val}%, #333 ${val}% 100% `);
+			}
+			
+			function waitForAudioContext(){
+				return audioContext;
+			}
+			
+			function loadVersion(version){
+				if(Number.isInteger(currentVersion)){
+					try {
+						player.stop();
+					} catch(e){
+						//shit breaks if nothing is played yet
+						console.log("attempted to stop broken player");
+					}
+				}
+				currentVersion = version;
+				loader.style.display = "flex";
+				trackHolder.innerHTML = "";
+				tracks.length = 0;
+				player = undefined;
+				progress.value = 0;
+				progressText.innerHTML = "0:00";
+				lengthText.innerHTML = "0:00";
+				stateDict.duration = 0;
+				
+				if(hasMediaSession){
+					navigator.mediaSession.metadata.artist = track.artists;
+					if(track.versions.length > 1) {
+						navigator.mediaSession.metadata.title = `${track.name} (${track.versions[version].name})`;
+					} else {
+						navigator.mediaSession.metadata.title = `${track.name}`;
+					}
+				}
+				
+				for(const stem of track.versions[version].stems){
+					const track = {};
+					const elt = document.createElement("div");
+					const title = document.createElement("div");
+					title.innerText = stem.name;
+					title.classList.add("stem-title");
+					//const playButton = document.createElement("button");
+					//playButton.classList.add("fa-solid");
+					//playButton.innerText="\uf04b";
+					const muteButton = document.createElement("button");
+					muteButton.innerText="M";
+					muteButton.setAttribute("data-mute-active", false);
+					muteButton.title = "mute";
+					const soloButton = document.createElement("button");
+					soloButton.setAttribute("data-solo-active", false);
+					soloButton.innerText="S";
+					soloButton.title = "solo";
+					const volume = new Slider(undefined, 80);
+					volume.holder.style.width = "150px";
+					volume.holder.title = "track volume";
+					track.gainParams = {gain: volume.value / 100, mute: false}
+					
+					//const waveform = document.createElement("div");
+					const waveform = new WaveformSlider();
+					
+					waveform.addListener(e=>{
+						player.position = waveform.value / 100 * player.duration;
+					});
+					
+					//elt.appendChild(playButton);
+					elt.appendChild(muteButton);
+					elt.appendChild(soloButton);
+					elt.appendChild(volume.holder);
+					elt.appendChild(title);
+					elt.appendChild(waveform.holder);
+					trackHolder.appendChild(elt);
+					
+					track.customProps = {elt, muteButton, soloButton, volume, waveform};
+					
+					track.sourceUrl = (new URL(BASE_URL + stem.file)).href;
+					
+					tracks.push(track);
+					
+				}
+				
+				player = new Multitrack.MultitrackAudioPlayer({
+					autoInitialize: true,
+					autoLoad: true,
+					autoRewind: true,
+					onStateChanged: stateChange,
+					onPlayStateChanged: playStateChange,
+					onPositionChanged: positionChange,
+					trackConfiguration: {
+						tracks,
+						soloTrackIndex: -1
+					},
+					gainParams: {
+						gain: 1,
+						mute: false
+					},
+					audioContextProvider: { waitForAudioContext }
+				});
+				
+				let i=0;
+				for(const track of player.tracks){
+					const j = i;
+					track.customProps.volume.addListener(()=>{
+						track.gainParams = {... track.gainParams, gain: track.customProps.volume.value / 100}
+					});
+					track.customProps.muteButton.addEventListener("click", (e)=>{
+						e.target.dataset.muteActive = !(e.target.dataset.muteActive=="true");
+						track.gainParams = {... track.gainParams, mute: (e.target.dataset.muteActive=="true")};
+					});
+					track.customProps.soloButton.addEventListener("click", (e)=>{
+						if(e.target.dataset.soloActive=="false"){
+							player.soloTrackIndex = j;
+							try{
+								trackHolder.querySelector("[data-solo-active=\"true\"]").dataset.soloActive = "false";
+							} catch (e){}
+							e.target.dataset.soloActive = "true";
+						} else {
+							player.soloTrackIndex = -1;
+							e.target.dataset.soloActive = "false";
+						}
+					});
+					i++;
+				}
+			}
+			
+			function loadTrack(trackData){
+				track = trackData;
+				title.innerHTML = "";
+				title.innerText = track.name;
+				author.innerText = track.artists;
+				notes.innerText = track.comments || "";
+				document.title = `${track.name} - ${track.artists}`;
+				const which = (new URL(window.location.href).searchParams.get("version"))*1 ?? 0;
+				
+				if(track.versions.length > 1){
+					const versionSelector = document.createElement("select");
+					title.appendChild(versionSelector);
+					let i = 0;
+					for(version of track.versions){
+						const option = document.createElement("option");
+						option.value = i;
+						option.innerText = version.name;
+						i++;
+						versionSelector.appendChild(option);
+						versionSelector.addEventListener("input", (e)=>{;
+							if(currentVersion != e.target.value){
+								loadVersion(e.target.value);
+							}
+						});
+					}
+					versionSelector.value = which;
+				}
+				loadVersion(which);
+			}
+			
+			fetch("https://bunnyms.github.io/list.json")
+			.then(data => data.json())
+			.then(data => {
+				console.log(data.length, "songs exist");
+				const which = (new URL(window.location.href).searchParams.get("song"))*1 ?? 27;
+				console.log(which);
+				fetch("https://bunnyms.github.io/" + data[which])
+				.then(track => track.json())
+				.then(loadTrack);
+			});
+			
+			//event listeners and similar
+			
+			//#ui elements
+			//##sliders
+			progress.addListener((e)=>{
+				player.position = progress.value / 100 * player.duration;
+			});
+			
+			//##buttons
+			playButton.addEventListener("click", playPause);
+			
+			stopButton.addEventListener("click", ()=>{
+				player.stop();
+				player.position = 0;
+			});
+			
+			fwdButton.addEventListener("click", ()=>{
+				player.position += 10;
+			});
+			backButton.addEventListener("click", ()=>{
+				player.position = Math.max(player.position - 10, 0);
+			});
+			
+			volume.addListener(()=>{
+				player.gainParams = {... player.gainParams, gain: volume.value / 100}
+			});
+			
+			resetButton.addEventListener("click", ()=>{
+				for(const track of player.tracks){
+					track.gainParams = {... track.gainParams, mute: false}
+					track.customProps.muteButton.dataset.muteActive = "false";
+					track.customProps.soloButton.dataset.soloActive = "false";
+					track.customProps.volume.value = 80;
+					track.gainParams = {... track.gainParams, gain: track.customProps.volume.value / 100};
+				}
+				player.soloTrackIndex = -1;
+			});
+			
+			//#mediaSession
+			if (hasMediaSession) {
+				navigator.mediaSession.metadata = new MediaMetadata({});
+				navigator.mediaSession.setActionHandler("pause", actionHandler);
+				navigator.mediaSession.setActionHandler("play", actionHandler);
+				navigator.mediaSession.setActionHandler("seekbackward", actionHandler);
+				navigator.mediaSession.setActionHandler("seekforward", actionHandler);
+				navigator.mediaSession.setActionHandler("seekto", actionHandler); // we ignore fastSeek
+				navigator.mediaSession.setActionHandler("stop", actionHandler);
+			}
+			
+			function actionHandler(action){
+				console.log(action);
+				switch(action.action){
+					case "pause":
+						player.pause();
+						break;
+					case "play":
+						player.start();
+						break;
+					case "seekbackward":
+						//setting the position too far is protected by multitrack-audio-player, setting below 0 is not
+						player.position = Math.max(player.position - action/seekOffset, 0);
+						break;
+					case "seekforward":
+						player.position += action.seekOffset;
+						break;
+					case "seekto":
+						player.position = Math.max(action.seekTime, 0);
+						break;
+					case "stop":
+						player.stop();
+						player.position = 0;
+						break;
+				}
+			}
+			//#keyboard events
+			document.addEventListener("keydown", (e)=>{
+				outer: switch(e.target.nodeName) {
+					case "INPUT":
+					case "BODY":
+					if(e.code === "Space"){
+						playPause();
+						break;
+					}
+					case "BUTTON":
+					inner: switch(e.code) {
+						case "ArrowLeft":
+							player.position = Math.max(player.position - 5, 0);
+							break outer;
+						case "KeyJ":
+							player.position = Math.max(player.position - 10, 0);
+							break outer;
+						case "ArrowRight":
+							player.position += 5;
+							break outer;
+						case "KeyL":
+							player.position += 10;
+							break outer;
+						case "KeyK": 
+							playPause();
+							break outer;
+					}
+					default:
+						break;
+				}
+			});
+			
+			function playPause(){
+				if(player.state !== "ready") return;
+				switch(player.playState){
+					case "started": 
+						player.pause();
+						break;
+					case "stopped":
+					case "pausing":
+						player.start();
+						break;
+				}
+			}
+			
+			//end listeners
+			const WAVEFORM_WIDTH = 1900; // imagine this is on a 1080p monitor
+			const WAVEFORM_HEIGHT = 84;
+			
+			function generateWaveform(track) {
+				const canvas = new OffscreenCanvas(WAVEFORM_WIDTH, WAVEFORM_HEIGHT);
+				const ctx = canvas.getContext("2d");
+				ctx.fillStyle = "#000";
+				let audioData = new Float32Array(track.buffer.getChannelData(0))
+				for (let i = 1; i < track.buffer.numberOfChannels; i++){
+					const channel = track.buffer.getChannelData(i);
+					audioData = audioData.map((a, i) => a + channel[i]);
+				}
+				const pixlWidth = audioData.length/WAVEFORM_WIDTH;
+				let audioOffset = 0;
+				for (let i = 0; i < WAVEFORM_WIDTH; i++){
+					let sumP = 0;
+					let sumN = 0;
+					let max = 0;
+					let min = 0;
+					for (; audioOffset < (i+1)*pixlWidth; audioOffset++){
+						if(audioData[audioOffset] > 0){
+							sumP += Math.abs(audioData[audioOffset]);
+						} else if(audioData[audioOffset] < 0) {
+							sumN += Math.abs(audioData[audioOffset]);
+						}
+						max = Math.max(max, audioData[audioOffset]);
+						min = Math.min(min, audioData[audioOffset]);
+					}
+					const valP = (sumP / pixlWidth) ** .5;
+					const valN = (sumN / pixlWidth) ** .5;
+					/*ctx.globalAlpha = 0.3;
+					ctx.fillRect(i, (1 - max) * WAVEFORM_HEIGHT / 2, 1, (max - min)/2 * WAVEFORM_HEIGHT);
+					ctx.globalAlpha = 1;*/
+					ctx.fillRect(i, (1 - valP) * WAVEFORM_HEIGHT / 2, 1, (valP + valN)/2 * WAVEFORM_HEIGHT);
+				}
+				canvas.convertToBlob().then(blob=>{
+					if(blob == null) return;
+					track.customProps.waveform.track.style.maskImage = `url("${URL.createObjectURL(blob)}")`;
+					//debugger;
+					//console.log(URL.createObjectURL(blob));
+					
+				});
+			}
+			
+		</script>
+	</body>
+</html>
