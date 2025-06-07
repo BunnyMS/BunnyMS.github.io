@@ -1,0 +1,134 @@
+{
+	"name": "BOOT Soundtrack",
+	"versions": [
+		{
+			"name": "Thema Eiland (loop)",
+			"file": "/boot/thema eiland/LOOP.mp3",
+			"stems": [
+				{
+					"name": "NI PAD LESOTHO",
+					"file": "/boot/thema eiland/NI PAD LESOTHO LOOP.mp3"
+				},
+				{
+					"name": "NI TRUMPET MUTE",
+					"file": "/boot/thema eiland/NI TRUMPET MUTE LOOP.mp3"
+				},
+				{
+					"name": "DS STRAYER",
+					"file": "/boot/thema eiland/DS STRAYER LOOP.mp3"
+				},
+				{
+					"name": "NI AFRICAN SHAKERS preset C3",
+					"file": "/boot/thema eiland/NI AFRICAN SHAKERS C3 LOOP.mp3"
+				}
+			],
+			"length":"1:04"
+		},
+		{
+			"name": "Thema Eiland (geen loop)",
+			"file": "/boot/thema eiland/NOLOOP.mp3",
+			"stems": [
+				{
+					"name": "NI PAD LESOTHO",
+					"file": "/boot/thema eiland/NI PAD LESOTHO.mp3"
+				},
+				{
+					"name": "NI TRUMPET MUTE",
+					"file": "/boot/thema eiland/NI TRUMPET MUTE.mp3"
+				},
+				{
+					"name": "DS STRAYER",
+					"file": "/boot/thema eiland/DS STRAYER.mp3"
+				},
+				{
+					"name": "NI AFRICAN SHAKERS preset C3",
+					"file": "/boot/thema eiland/NI AFRICAN SHAKERS C3.mp3"
+				}
+			],
+			"length":"1:04"
+		},
+		{
+			"name": "Thema Grot",
+			"file": "/boot/thema grot/FULL.mp3",
+			"stems": [
+				{
+					"name": "KOREN",
+					"file": "/boot/thema grot/CHOIRS.mp3"
+				},
+				{
+					"name": "DS SANTA MONICA",
+					"file": "/boot/thema grot/DS SINT MONIQUE.mp3"
+				},
+				{
+					"name": "SFX",
+					"file": "/boot/thema grot/SFX.mp3"
+				},
+				{
+					"name": "VT ORGANIC ORCHESTRA",
+					"file": "/boot/thema grot/VT ORG ORCH.mp3"
+				},
+				{
+					"name": "VT/DS ALT STRINGS",
+					"file": "/boot/thema grot/VT_DS ALT STR.mp3"
+				}
+			],
+			"length":"1:24"
+		},
+		{
+			"name": "Thema Einde (loop)",
+			"file": "/boot/thema einde/LOOP.mp3",
+			"stems": [
+				{
+					"name": "(u)SYNTH",
+					"file": "/boot/thema einde/SYNTH LOOP.mp3"
+				},
+				{
+					"name": "KORTE STRIJKERS",
+					"file": "/boot/thema einde/SHORT STRINGS LOOP.mp3"
+				},
+				{
+					"name": "SAM ST STRINGS",
+					"file": "/boot/thema einde/SAM ST STRINGS LOOP.mp3"
+				},
+				{
+					"name": "DS PIANO",
+					"file": "/boot/thema einde/DS PIANO LOOP.mp3"
+				},
+				{
+					"name": "HEAV. FSB",
+					"file": "/boot/thema einde/HEAV FSB LOOP.mp3"
+				}
+			],
+			"length":"1:24"
+		},
+		{
+			"name": "Thema Einde (geen loop)",
+			"file": "/boot/thema einde/NOLOOP.mp3",
+			"stems": [
+				{
+					"name": "(u)SYNTH",
+					"file": "/boot/thema einde/SYNTH.mp3"
+				},
+				{
+					"name": "KORTE STRIJKERS",
+					"file": "/boot/thema einde/SHORT STRINGS.mp3"
+				},
+				{
+					"name": "SAM ST STRINGS",
+					"file": "/boot/thema einde/SAM ST STRINGS.mp3"
+				},
+				{
+					"name": "DS PIANO",
+					"file": "/boot/thema einde/DS PIANO.mp3"
+				},
+				{
+					"name": "HEAV. FSB",
+					"file": "/boot/thema einde/HEAV FSB.mp3"
+				}
+			],
+			"length":"1:27"
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "Buitengewoon Onderzoek op Onbewoond Terrein.\n©/℗ Adriaan Zwemer 2024-2025 (behalve percussie Thema Eiland).\nPercussie Thema Eiland is van een preset."
+}

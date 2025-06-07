@@ -562,7 +562,7 @@
 			}
 			
 			function loadVersion(version){
-				if(Number.isInteger(currentVersion)){
+				if(Number.isInteger(currentVersion * 1)){
 					try {
 						player.stop();
 					} catch(e){
@@ -769,7 +769,6 @@
 			}
 			
 			function actionHandler(action){
-				console.log(action);
 				switch(action.action){
 					case "pause":
 						player.pause();
