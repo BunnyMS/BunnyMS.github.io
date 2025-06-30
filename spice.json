@@ -1,0 +1,34 @@
+{
+	"name": "Oh, Well",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/spice/full.mp3",
+			"stems": [
+				{
+					"name": "Brass",
+					"file": "/spice/Brass.mp3"
+				},
+				{
+					"name": "Choir",
+					"file": "/spice/Choir.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/spice/Orch Strings.mp3"
+				},
+				{
+					"name": "Other types of Strings",
+					"file": "/spice/Plucked%2C%20Strummed%20%26%20Hammered%20Strings.mp3"
+				},
+				{
+					"name": "Woodwinds",
+					"file": "/spice/Woodwinds.mp3"
+				}
+			],
+			"length":"1:33"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "idk, something about love or whatever"
+}
