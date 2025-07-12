@@ -1,0 +1,26 @@
+{
+	"name": "Well Said",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/wellsad/mix.mp3",
+			"stems": [
+				{
+					"name": "Choirs",
+					"file": "/wellsad/choirs.mp3"
+				},
+				{
+					"name": "Pianos",
+					"file": "/wellsad/pianos.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/wellsad/strings.mp3"
+				}
+			],
+			"length":"1:09"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "Well Said"
+}
