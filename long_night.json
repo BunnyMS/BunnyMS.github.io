@@ -1,0 +1,41 @@
+{
+	"name": "(It's Been) a Long Night",
+	"versions": [
+		{
+			"name": "full",
+			"file": "/long_night/mix.mp3",
+			"stems": [
+				{
+					"name": "Synth a",
+					"file": "/long_night/synth_a.mp3"
+				},
+				{
+					"name": "Synth b",
+					"file": "/long_night/synth_b.mp3"
+				},
+				{
+					"name": "Synth c",
+					"file": "/long_night/synth_c.mp3"
+				},
+				{
+					"name": "Synth d",
+					"file": "/long_night/synth_d.mp3"
+				},
+				{
+					"name": "Synths e&f",
+					"file": "/long_night/synth_ef.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/long_night/perc.mp3"
+				},
+				{
+					"name": "E. guitar",
+					"file": "/long_night/guitar.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": ""
+}

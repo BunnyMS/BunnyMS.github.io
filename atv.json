@@ -30,27 +30,27 @@
 		},
 		{
 			"name": "_",
-			"file": "/atv/_/mix_underscore.mp3",
+			"file": "/atv/alt/mix_underscore.mp3",
 			"stems": [
 				{
 					"name": "Synths",
-					"file": "/atv/_/Synths.mp3"
+					"file": "/atv/alt/Synths.mp3"
 				},
 				{
 					"name": "Strings",
-					"file": "/atv/_/Strings.mp3"
+					"file": "/atv/alt/Strings.mp3"
 				},
 				{
 					"name": "Brass/Fx",
-					"file": "/atv/_/Brass+fx.mp3"
+					"file": "/atv/alt/Brass+fx.mp3"
 				},
 				{
 					"name": "Perc",
-					"file": "/atv/_/Percussion.mp3"
+					"file": "/atv/alt/Percussion.mp3"
 				},
 				{
 					"name": "Choirs",
-					"file": "/atv/_/Choirs.mp3"
+					"file": "/atv/alt/Choirs.mp3"
 				}
 			],
 			"length":"2:24"

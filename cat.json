@@ -1,0 +1,33 @@
+{
+	"name": "The Catastrophic Agent Tibbles",
+	"versions": [
+		{
+			"name": "full",
+			"file": "/cat/mix.mp3",
+			"stems": [
+				{
+					"name": "Short Strings",
+					"file": "/cat/str stac.mp3"
+				},
+				{
+					"name": "Sus Strings",
+					"file": "/cat/str sus.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/cat/synth.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/cat/doots.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/cat/perc.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": ""
+}
