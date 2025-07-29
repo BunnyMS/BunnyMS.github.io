@@ -778,7 +778,7 @@
 						break;
 					case "seekbackward":
 						//setting the position too far is protected by multitrack-audio-player, setting below 0 is not
-						player.position = Math.max(player.position - actio.seekOffset, 0);
+						player.position = Math.max(player.position - action.seekOffset, 0);
 						break;
 					case "seekforward":
 						player.position += action.seekOffset;
