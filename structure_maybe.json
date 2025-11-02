@@ -1,0 +1,29 @@
+{
+	"name": "Structure, Maybe",
+	"versions": [
+		{
+			"name": "full",
+			"file": "/structure_maybe/full.mp3",
+			"stems": [
+				{
+					"name": "Synth bass & arp",
+					"file": "/structure_maybe/synths.mp3"
+				},
+				{
+					"name": "Synth & VT Volitions drones",
+					"file": "/structure_maybe/drones.mp3"
+				},
+				{
+					"name": "Piano",
+					"file": "/structure_maybe/piano.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/structure_maybe/perc.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": ""
+}
