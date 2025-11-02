@@ -1,0 +1,25 @@
+{
+	"name": "Unexploded Ordinance",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tension/full.mp3",
+			"stems": [
+				{
+					"name": "Bass",
+					"file": "/tension/bass.mp3"
+				},
+				{
+					"name": "Drums",
+					"file": "/tension/drums.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/tension/synth.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}
