@@ -1,0 +1,25 @@
+{
+	"name": "Warm Day",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/warm/mix.mp3",
+			"stems": [
+				{
+					"name": "Guitar & Saw",
+					"file": "/warm/guitar_saw.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/warm/perc.mp3"
+				},
+				{
+					"name": "Pads",
+					"file": "/warm/pads.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}

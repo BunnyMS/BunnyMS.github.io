@@ -1,0 +1,37 @@
+{
+	"name": "It's Time",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/its_time/original_mix.mp3",
+			"stems": [
+				{
+					"name": "Organs",
+					"file": "/its_time/organs.mp3"
+				},
+				{
+					"name": "Bells",
+					"file": "/its_time/bells.mp3"
+				},
+				{
+					"name": "Sleigh bells",
+					"file": "/its_time/sleighs.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/its_time/strings.mp3"
+				},
+				{
+					"name": "Scary",
+					"file": "/its_time/scary.mp3"
+				},
+				{
+					"name": "Horns",
+					"file": "/its_time/horns.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}
