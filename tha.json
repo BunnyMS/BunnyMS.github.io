@@ -1,0 +1,33 @@
+{
+	"name": "The Hybrid Awakens",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tha/original-mix.mp3",
+			"stems": [
+				{
+					"name": "DS Earthquake",
+					"file": "/tha/site-percDS.mp3"
+				},
+				{
+					"name": "Sampled synth percussion",
+					"file": "/tha/site-perc2.mp3"
+				},
+				{
+					"name": "Synth percussion",
+					"file": "/tha/site-perc3.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/tha/site-synth.mp3"
+				},
+				{
+					"name": "Sampled synth bass",
+					"file": "/tha/site-bass.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025\nThe synth stem might not exactly match the original mix, because TRACKTION is DUMB."
+}

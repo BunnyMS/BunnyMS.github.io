@@ -1,0 +1,25 @@
+{
+	"name": "Testin a No",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/no/site-mix.mp3",
+			"stems": [
+				{
+					"name": "Odd",
+					"file": "/no/site-odd.mp3"
+				},
+				{
+					"name": "Main",
+					"file": "/no/site-main.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/no/site-perc.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}
