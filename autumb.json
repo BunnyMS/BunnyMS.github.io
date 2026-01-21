@@ -1,0 +1,22 @@
+{
+	"name": "Where we going?",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/autumb/mix.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/autumb/non-piano.mp3"
+				},
+				{
+					"name": "Pianos",
+					"file": "/autumb/pianos.mp3"
+				}
+			],
+			"length":"1:42"
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}

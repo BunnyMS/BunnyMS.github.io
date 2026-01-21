@@ -1,0 +1,37 @@
+{
+	"name": "Outside",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/te/mix.mp3",
+			"stems": [
+				{
+					"name": "Piano",
+					"file": "/te/piano.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/te/strijkers.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/te/koren.mp3"
+				},
+				{
+					"name": "Flutes",
+					"file": "/te/fluiten.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/te/koper.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/te/percussie.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}

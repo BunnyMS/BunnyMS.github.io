@@ -1,0 +1,37 @@
+{
+	"name": "After the End",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/ate/mix.mp3",
+			"stems": [
+				{
+					"name": "Piano",
+					"file": "/ate/pno.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/ate/bras.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/ate/str.mp3"
+				},
+				{
+					"name": "Flutes",
+					"file": "/ate/flts.mp3"
+				},
+				{
+					"name": "Sax",
+					"file": "/ate/bsax.mp3"
+				},
+				{
+					"name": "Coirs",
+					"file": "/ate/vox.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2024"
+}
