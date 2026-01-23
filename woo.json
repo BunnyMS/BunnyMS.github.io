@@ -1,0 +1,33 @@
+{
+	"name": "Woo!",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/woo/mix.mp3",
+			"stems": [
+				{
+					"name": "Orchestral hits",
+					"file": "/woo/hits.mp3"
+				},
+				{
+					"name": "Drums",
+					"file": "/woo/drums.mp3"
+				},
+				{
+					"name": "Synth 1",
+					"file": "/woo/synth1.mp3"
+				},
+				{
+					"name": "Synth 2",
+					"file": "/woo/synth2.mp3"
+				},
+				{
+					"name": "Synth 3",
+					"file": "/woo/synth3.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}

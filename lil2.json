@@ -1,0 +1,21 @@
+{
+	"name": "Lilhelm",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/lil/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Drums",
+					"file": "/lil/drums.mp3"
+				},
+				{
+					"name": "Synth",
+					"file": "/lil/synth.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}

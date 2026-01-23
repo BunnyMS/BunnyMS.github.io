@@ -1,0 +1,29 @@
+{
+	"name": "Even the Hero Needs a Life",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/ethnal/original_mix.mp3",
+			"stems": [
+				{
+					"name": "Keys",
+					"file": "/ethnal/keys.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/ethnal/strings.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/ethnal/choirs.mp3"
+				},
+				{
+					"name": "Brass & Synth",
+					"file": "/ethnal/brass_synth.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}
