@@ -1,0 +1,37 @@
+{
+	"name": "I swear I'm awake",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/isia/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Trombone",
+					"file": "/isia/trombône.mp3"
+				},
+				{
+					"name": "Piz. strings",
+					"file": "/isia/piz-str.mp3"
+				},
+				{
+					"name": "Drums",
+					"file": "/isia/drums.mp3"
+				},
+				{
+					"name": "Piano",
+					"file": "/isia/piano.mp3"
+				},
+				{
+					"name": "EP Bass",
+					"file": "/isia/ep-bas.mp3"
+				},
+				{
+					"name": "DS Cavaquinho",
+					"file": "/isia/ds-cavaquinho.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}

@@ -1,0 +1,55 @@
+{
+	"name": "Bassie & Adriaan: Thema zenuwachtig (cover)",
+	"versions": [
+		{
+			"name": "Eén",
+			"file": "/zemelappig/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Synth A",
+					"file": "/zemelappig/synth-a.mp3"
+				},
+				{
+					"name": "Bass A",
+					"file": "/zemelappig/bass-a.mp3"
+				},
+				{
+					"name": "Gitaar C & Saw",
+					"file": "/zemelappig/guitar-saw.mp3"
+				},
+				{
+					"name": "Bass B",
+					"file": "/zemelappig/bass-b.mp3"
+				},
+				{
+					"name": "Synth C (Shan-gri-la)",
+					"file": "/zemelappig/synth-c-shangrila.mp3"
+				}
+			]
+		},
+		{
+			"name": "Twee",
+			"file": "/zemelappig/mix-b.mp3",
+			"stems": [
+				{
+					"name": "Synth A",
+					"file": "/zemelappig/synth-a.mp3"
+				},
+				{
+					"name": "Bass A",
+					"file": "/zemelappig/bass-a.mp3"
+				},
+				{
+					"name": "Gitaar A & B",
+					"file": "/zemelappig/guitar-a-b.mp3"
+				},
+				{
+					"name": "Synth C (Shan-gri-la)",
+					"file": "/zemelappig/synth-c-shangrila.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "℗ Adriaan Zwemer 2025 - geschreven door Aad van Toor & Bert Smorenburg."
+}

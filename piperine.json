@@ -1,0 +1,71 @@
+{
+	"name": "Piperine",
+	"versions": [
+		{
+			"name": "Release",
+			"file": "/piperine/mix.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/piperine/synth.mp3"
+				},
+				{
+					"name": "Percussion & SFX",
+					"file": "/piperine/perc-sfx.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/piperine/koper.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/piperine/koren.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/piperine/strijkers.mp3"
+				},
+				{
+					"name": "Synth whistle",
+					"file": "/piperine/fluitje.mp3"
+				}
+			]
+		},
+		{
+			"name": "Alt",
+			"file": "/piperine/mix-alt.mp3",
+			"stems": [
+				{
+					"name": "Synths",
+					"file": "/piperine/synth.mp3"
+				},
+				{
+					"name": "Solo vox",
+					"file": "/piperine/solo-vox.mp3"
+				},
+				{
+					"name": "Percussion & SFX",
+					"file": "/piperine/perc-sfx.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/piperine/koper.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/piperine/koren.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/piperine/strijkers.mp3"
+				},
+				{
+					"name": "Synth whistle",
+					"file": "/piperine/fluitje.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}

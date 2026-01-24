@@ -1,0 +1,25 @@
+{
+	"name": "The Southern Coast",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tsc/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Pianos",
+					"file": "/tsc/piani.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/tsc/strings.mp3"
+				},
+				{
+					"name": "Other",
+					"file": "/tsc/other.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}

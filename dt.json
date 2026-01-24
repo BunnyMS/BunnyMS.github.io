@@ -1,0 +1,33 @@
+{
+	"name": "Ducktales theme (cover)",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/dt/mix.mp3",
+			"stems": [
+				{
+					"name": "Synth 1",
+					"file": "/dt/synth-a.mp3"
+				},
+				{
+					"name": "Bass",
+					"file": "/dt/bass.mp3"
+				},
+				{
+					"name": "Synth 2",
+					"file": "/dt/synth-b.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/dt/strings.mp3"
+				},
+				{
+					"name": "EP",
+					"file": "/dt/ep.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "℗ Adriaan Zwemer 2025 - composed by Mark Mueller, vaguely based on Dominic Lewis' version."
+}

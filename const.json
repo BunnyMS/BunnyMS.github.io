@@ -1,0 +1,33 @@
+{
+	"name": "Constantine theme (Blake style cover)",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/const/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Synth",
+					"file": "/const/synth.mp3"
+				},
+				{
+					"name": "Pianos",
+					"file": "/const/pianos.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/const/strings.mp3"
+				},
+				{
+					"name": "Bells",
+					"file": "/const/bells.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/const/brass.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "℗ Adriaan Zwemer 2025 - composed by Bear McCreary, vaguely based on Blake Neely' version."
+}
