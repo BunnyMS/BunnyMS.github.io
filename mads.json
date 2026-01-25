@@ -1,0 +1,53 @@
+{
+	"name": "We're not done here...",
+	"versions": [
+		{
+			"name": "We're not done here",
+			"file": "/mads/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Synth A",
+					"file": "/mads/synth-a.mp3"
+				},
+				{
+					"name": "Strings",
+					"file": "/mads/strings.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/mads/brass.mp3"
+				},
+				{
+					"name": "Flute",
+					"file": "/mads/flute.mp3"
+				},
+				{
+					"name": "Percussion",
+					"file": "/mads/percussion.mp3"
+				},
+				{
+					"name": "Synth B",
+					"file": "/mads/synth-ufo.mp3"
+				},
+				{
+					"name": "Guitar A",
+					"file": "/mads/guitar-a.mp3"
+				},
+				{
+					"name": "Bells",
+					"file": "/mads/totally.mp3"
+				},
+				{
+					"name": "Bass",
+					"file": "/mads/bass.mp3"
+				},
+				{
+					"name": "Guitars B & C",
+					"file": "/mads/guitar-b-c.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "© / ℗ Adriaan Zwemer 2026"
+}
