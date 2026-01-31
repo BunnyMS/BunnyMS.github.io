@@ -1,0 +1,93 @@
+{
+	"name": "The Last Sunset",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/tls/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Perc - Drums",
+					"file": "/tls/perc-non-bunny-drums.mp3"
+				},
+				{
+					"name": "Perc - Metals",
+					"file": "/tls/perc-non-bunny-metals.mp3"
+				},
+				{
+					"name": "Perc - BNY",
+					"file": "/tls/perc-bunny.mp3"
+				},
+				{
+					"name": "Guitar",
+					"file": "/tls/guitar.mp3"
+				},
+				{
+					"name": "Strings A",
+					"file": "/tls/strings-a.mp3"
+				},
+				{
+					"name": "Strings B",
+					"file": "/tls/strings-b.mp3"
+				},
+				{
+					"name": "Brass A",
+					"file": "/tls/brass-a.mp3"
+				},
+				{
+					"name": "Brass B",
+					"file": "/tls/brass-b.mp3"
+				},
+				{
+					"name": "Perc - Tonal",
+					"file": "/tls/perc-non-bunny-tonal.mp3"
+				},
+				{
+					"name": "Woodwinds A",
+					"file": "/tls/ww-a.mp3"
+				},
+				{
+					"name": "Woodwinds B",
+					"file": "/tls/ww-b.mp3"
+				}
+			]
+		},
+		{
+			"name": "Alt",
+			"file": "/tls/mix-alt.mp3",
+			"stems": [
+				{
+					"name": "Strings A",
+					"file": "/tls/strings-a.mp3"
+				},
+				{
+					"name": "Brass A",
+					"file": "/tls/brass-a.mp3"
+				},
+				{
+					"name": "Woodwinds A",
+					"file": "/tls/ww-a.mp3"
+				}
+			]
+		},
+		{
+			"name": "Precisely (percussion only)",
+			"file": "/tls/original-mix-perc.mp3",
+			"stems": [
+				{
+					"name": "Perc - Drums",
+					"file": "/tls/perc-non-bunny-drums.mp3"
+				},
+				{
+					"name": "Perc - Metals",
+					"file": "/tls/perc-non-bunny-metals.mp3"
+				},
+				{
+					"name": "Perc - BNY",
+					"file": "/tls/perc-bunny.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Bunny",
+	"comments": "© / ℗ Adriaan Zwemer 2025"
+}
