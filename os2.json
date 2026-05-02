@@ -1,0 +1,53 @@
+{
+	"name": "Across the Sky",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/os2/mix.mp3",
+			"stems": [
+				{
+					"name": "Plucked piano",
+					"file": "/os2/piano-pluk.mp3"
+				},
+				{
+					"name": "Strings bowed",
+					"file": "/os2/str-str.mp3"
+				},
+				{
+					"name": "Strings plucked",
+					"file": "/os2/str-pluk.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/os2/koper.mp3"
+				},
+				{
+					"name": "Choirs",
+					"file": "/os2/koren.mp3"
+				},
+				{
+					"name": "Percussion tonal",
+					"file": "/os2/perc-tonaal.mp3"
+				},
+				{
+					"name": "Percussion b",
+					"file": "/os2/os-perc.mp3"
+				},
+				{
+					"name": "Sampled synths",
+					"file": "/os2/os-synths-en-pad.mp3"
+				},
+				{
+					"name": "Synths a",
+					"file": "/os2/synths-a.mp3"
+				},
+				{
+					"name": "Synths b&c",
+					"file": "/os2/synths-bc.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "℗/© Adriaan Zwemer 2026"
+}
