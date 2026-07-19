@@ -1,0 +1,29 @@
+{
+	"name": "Brix is indeed very cute, as all cats are",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/os/BRIXMIX.mp3",
+			"stems": [
+				{
+					"name": "Brix 1",
+					"file": "/os/BRIX1.mp3"
+				},
+				{
+					"name": "Brix 2",
+					"file": "/os/BRIX2.mp3"
+				},
+				{
+					"name": "Brix 3",
+					"file": "/os/BRIX3.mp3"
+				},
+				{
+					"name": "Brix 4",
+					"file": "/os/BRIX4.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer, BRIX THE CAT",
+	"comments": "℗/© Adriaan Zwemer 2025 - Each track is a separate instance of Soundpaint, no effects outside of soundpaint."
+}
