@@ -1,0 +1,46 @@
+{
+	"name": "Audio Imperia 1m Forest Mountains",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/ai1mfm/original-mix.mp3",
+			"stems": [
+				{
+					"name": "Percussion",
+					"file": "/ai1mfm/percussion.mp3"
+				},
+				{
+					"name": "Woodwinds",
+					"file": "/ai1mfm/woodwinds.mp3"
+				},
+				{
+					"name": "Whistle synth",
+					"file": "/ai1mfm/synth_whistle.mp3"
+				},
+				{
+					"name": "more woodwinds i guess, but they don't make sense in the same stem as the others",
+					"file": "/ai1mfm/idk-it-was-supposed-to-be_woodwinds.mp3"
+				},
+				{
+					"name": "Harps/mandriola",
+					"file": "/ai1mfm/plucked_strings.mp3"
+				},
+				{
+					"name": "Traditional strings",
+					"file": "/ai1mfm/trad_strings.mp3"
+				},
+				{
+					"name": "Brass",
+					"file": "/ai1mfm/brass.mp3"
+				},
+				{
+					"name": "Bells",
+					"file": "/ai1mfm/bel.mp3"
+				}
+			],
+			"length":"1:20"
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "© / ℗ Adriaan Zwemer 2026"
+}
