@@ -39,6 +39,41 @@
 				}
 			],
 			"length":"1:20"
+		},
+		{
+			"name": "Percussion in more detail",
+			"file": "/ai1mfm/percussion.mp3",
+			"stems": [
+				{
+					"name": "Strezov CT:P&D drums",
+					"file": "/ai1mfm/perc/strezov drums.mp3"
+				},
+				{
+					"name": "Strezov CT:P&D percussion",
+					"file": "/ai1mfm/perc/strezov percussion.mp3"
+				},
+				{
+					"name": "Bunny Babbelaarblik -36st",
+					"file": "/ai1mfm/perc/bunny babbelaarblik -36st.mp3"
+				},
+				{
+					"name": "Bunny Babbelaarblik",
+					"file": "/ai1mfm/perc/bunny babbelaarblik.mp3"
+				},
+				{
+					"name": "Orchestral Tools Dynamo Gran Cassa",
+					"file": "/ai1mfm/perc/orch big house.mp3"
+				},
+				{
+					"name": "Orchestral Tools Dynamo Djembe Ensemble",
+					"file": "/ai1mfm/perc/orch djembe ens.mp3"
+				},
+				{
+					"name": "Orchestral Tools Dynamo Timpani Ensemble",
+					"file": "/ai1mfm/perc/orch timpani ens.mp3"
+				}
+			],
+			"length":"1:20"
 		}
 	],
 	"artists": "Adriaan Zwemer",
