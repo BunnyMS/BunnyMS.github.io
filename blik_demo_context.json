@@ -1,0 +1,59 @@
+{
+	"name": "Blik - Context demo",
+	"versions": [
+		{
+			"name": "Context demo",
+			"file": "/blik_demos/context/BNY PM Blik context demo.mp3",
+			"stems": [
+				{
+					"name": "Blik A",
+					"file": "/blik_demos/context/blik a.mp3"
+				},
+				{
+					"name": "Blik B",
+					"file": "/blik_demos/context/blik b.mp3"
+				},
+				{
+					"name": "G. Strezov Diamond Jazz Alto Sax",
+					"file": "/blik_demos/context/SAX_strez.mp3"
+				},
+				{
+					"name": "NI Hypha Tropical",
+					"file": "/blik_demos/context/TROPICAL_ni_hypha.mp3"
+				},
+				{
+					"name": "NI Hypha Kyoto",
+					"file": "/blik_demos/context/KYOTO_ni_hypha.mp3"
+				},
+				{
+					"name": "NI Play Series ANALOG DREAMS Oberbass",
+					"file": "/blik_demos/context/OBERBRASS_ni_ad.mp3"
+				},
+				{
+					"name": "Vienna Big Bang Orchestra Free Basics",
+					"file": "/blik_demos/context/BBO_vsl.mp3"
+				},
+				{
+					"name": "Spitfire BBC SO Discover Horns",
+					"file": "/blik_demos/context/FH_bbcso.mp3"
+				}
+			]
+		},
+		{
+			"name": "Context demo solo",
+			"file": "/blik_demos/context/BNY PM Blik context demo solo.mp3",
+			"stems": [
+				{
+					"name": "Blik A",
+					"file": "/blik_demos/context/blik a.mp3"
+				},
+				{
+					"name": "Blik B",
+					"file": "/blik_demos/context/blik b.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "Created using Blik. Using external effects and other digital instruments. \n© / ℗ Adriaan Zwemer 2026"
+}

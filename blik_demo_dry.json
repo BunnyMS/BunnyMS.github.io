@@ -1,0 +1,21 @@
+{
+	"name": "Blik - Dry demo",
+	"versions": [
+		{
+			"name": "Full",
+			"file": "/blik_demos/dry/BNY PM Blik dry demo.mp3",
+			"stems": [
+				{
+					"name": "A",
+					"file": "/blik_demos/dry/blik a.mp3"
+				},
+				{
+					"name": "B",
+					"file": "/blik_demos/dry/blik b.mp3"
+				}
+			]
+		}
+	],
+	"artists": "Adriaan Zwemer",
+	"comments": "Entirely created using Blik. No external effects.\n© / ℗ Adriaan Zwemer 2026"
+}
